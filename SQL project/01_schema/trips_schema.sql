@@ -35,7 +35,7 @@ CREATE TABLE Drivers (
 );
 
 CREATE TABLE drivers_shifts (
-    id INT(11),
+    id INT(11) UNSIGNED AUTO_INCREMENT,
     driver_id INT(11) UNSIGNED NOT NULL,
     day_id INT(11) UNSIGNED NOT NULL,
     start_time TIME,
