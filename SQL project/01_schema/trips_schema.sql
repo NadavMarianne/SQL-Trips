@@ -27,7 +27,7 @@ CREATE TABLE days (
 );
 
 CREATE TABLE Drivers (
-    driver_id INT(11) UNSIGNED,
+    driver_id INT(11) UNSIGNED AUTO_INCREMENT,
     driver_name VARCHAR(25),
     gender VARCHAR(10),
     age INT(11),
@@ -65,7 +65,7 @@ CREATE TABLE Guides (
 
 CREATE TABLE Customers (
     customer_id VARCHAR(10) NOT NULL,
-    name VARCHAR(25) NOT NULL,
+    customer_name VARCHAR(25) NOT NULL,
     age DECIMAL(8, 0) UNSIGNED,
     gender VARCHAR(10),
     email VARCHAR(50),
@@ -82,7 +82,7 @@ CREATE TABLE TripCustomers (
 
 
 /* ***************************************************************
-***************************FOREIGN KEYS***************************
+***************************CONSTRAINTS***************************
 **************************************************************** */
 
 ALTER TABLE Trips
